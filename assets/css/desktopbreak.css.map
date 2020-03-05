@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK;EAEtB,AAAA,OAAO,AAAA,MAAM,CAAC;IACZ,MAAM,EAAE,IAAI;IACZ,UAAU,EAAE,OAAO;GACpB",
+    "sources": [
+        "desktopbreak.scss"
+    ],
+    "names": [],
+    "file": "desktopbreak.css"
+}

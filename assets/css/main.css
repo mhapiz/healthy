@@ -1,0 +1,79 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.btnku {
+  font-family: "Lemonada", cursive;
+  padding: 7px 15px;
+  border-radius: 30px;
+  background: #A0CC00;
+}
+
+.btnku:hover {
+  background: #c8ff00;
+  -webkit-box-shadow: 0px 0px 10px 1px #525252;
+          box-shadow: 0px 0px 10px 1px #525252;
+}
+
+section.jumbo {
+  margin-top: -58px;
+  height: 100vh;
+  background: #3DDC90;
+}
+
+@media (min-width: 576px) {
+  nav {
+    background: none !important;
+    position: relative;
+    z-index: 3;
+  }
+  nav .navbar-nav {
+    width: 800px;
+    text-transform: uppercase;
+  }
+  nav .navbar-nav .active {
+    font-weight: 700;
+  }
+  section.jumbo {
+    position: relative;
+    z-index: 1;
+    margin-top: -58px;
+    height: 100vh;
+    background: #3DDC90;
+    padding-top: 100px;
+  }
+  section.jumbo .bg {
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    border: 2px solid white;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 1000px;
+  }
+  section.jumbo .jumbo-desc h1 {
+    font-family: "Lemonada", cursive;
+    font-size: 48px;
+    line-height: 70px;
+  }
+  section.jumbo .jumbo-desc h1 span {
+    color: #F9F8F4;
+  }
+  section.jumbo .jumbo-desc p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  section.jumbo .similar h5 {
+    font-family: "Lemonada", cursive;
+  }
+  section.jumbo .similar .similar-product {
+    border: 1px solid red;
+    width: 70%;
+  }
+  section.jumbo .similar .title {
+    margin-top: 60px;
+    font-family: "Lemonada", cursive;
+  }
+}
+/*# sourceMappingURL=main.css.map */

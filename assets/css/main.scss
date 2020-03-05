@@ -1,0 +1,28 @@
+$displayFont : 'Lemonada',
+cursive;
+$mainFont : 'Noto Sans',
+sans-serif;
+
+body {
+  font-family: $mainFont;
+}
+
+.btnku {
+  font-family: $displayFont;
+  padding: 7px 15px;
+  border-radius: 30px;
+  background: #A0CC00;
+
+  &:hover {
+    background: rgb(200, 255, 0);
+    box-shadow: 0px 0px 10px 1px rgb(82, 82, 82);
+  }
+}
+
+section.jumbo {
+  margin-top: -58px;
+  height: 100vh;
+  background: #3DDC90;
+}
+
+@import 'desktopbreak';

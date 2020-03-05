@@ -1,0 +1,75 @@
+@media (min-width: 576px) {
+
+
+  nav {
+    background: none !important;
+    position: relative;
+    z-index: 3;
+
+    .navbar-nav {
+      width: 800px;
+      text-transform: uppercase;
+
+      .active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  section.jumbo {
+    position: relative;
+    z-index: 1;
+    margin-top: -58px;
+    height: 100vh;
+    background: #3DDC90;
+    padding-top: 100px;
+
+    .bg {
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      border: 2px solid white;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 1000px;
+    }
+
+    .jumbo-desc {
+      h1 {
+        font-family: $displayFont;
+        font-size: 48px;
+
+        line-height: 70px;
+
+        span {
+          color: #F9F8F4;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: lighter;
+      }
+
+    }
+
+    .similar {
+      h5 {
+        font-family: $displayFont;
+      }
+
+      .similar-product {
+        border: 1px solid red;
+        width: 70%;
+      }
+
+      .title {
+        margin-top: 60px;
+        font-family: $displayFont;
+      }
+
+    }
+
+  }
+}
