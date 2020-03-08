@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
@@ -6,7 +10,7 @@ body {
   font-family: "Lemonada", cursive;
   padding: 7px 15px;
   border-radius: 30px;
-  background: #A0CC00;
+  background: #a0cc00;
 }
 
 .btnku:hover {
@@ -15,38 +19,350 @@ body {
           box-shadow: 0px 0px 10px 1px #525252;
 }
 
+.product-card {
+  background: #83f3bb;
+  min-height: 300px;
+  width: 180px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  overflow: none;
+}
+
+.product-card .product-img {
+  width: 100%;
+  height: 200px;
+}
+
+.product-card .product-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  overflow: none;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.product-card .product-content {
+  font-family: "Lemonada", cursive;
+}
+
+.product-card .product-content .title {
+  font-size: 18px;
+}
+
+.product-card .product-content .price {
+  font-size: 14px;
+}
+
+nav {
+  background: none !important;
+  position: relative;
+  z-index: 3;
+}
+
+nav .navbar-nav {
+  width: 800px;
+  text-transform: uppercase;
+}
+
+nav .navbar-nav .active {
+  font-weight: 700;
+}
+
 section.jumbo {
+  position: relative;
+  z-index: 1;
   margin-top: -58px;
   height: 100vh;
-  background: #3DDC90;
+  background: #3ddc90;
+  padding-top: 100px;
+}
+
+section.jumbo .bg {
+  display: none;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 1000px;
+}
+
+section.jumbo .jumbo-desc h1 {
+  font-family: "Lemonada", cursive;
+  font-size: 34px;
+  line-height: 70px;
+}
+
+section.jumbo .jumbo-desc h1 span {
+  color: #f9f8f4;
+}
+
+section.jumbo .jumbo-desc p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+section.jumbo .similar h5 {
+  font-family: "Lemonada", cursive;
+}
+
+section.jumbo .similar .similar-product {
+  width: 70%;
+}
+
+section.jumbo .similar .title {
+  margin-top: 60px;
+  font-family: "Lemonada", cursive;
+}
+
+section.hot {
+  margin-top: 100px;
+}
+
+section.hot .hot-img-container {
+  padding: 0px 0px;
+  width: 100%;
+  position: relative;
+}
+
+section.hot .hot-img-container .bg {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.33);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+section.hot .hot-img-container img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+section.hot .hot-img-container .hot-content {
+  color: white;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  position: absolute;
+  z-index: 4;
+}
+
+section.hot .hot-img-container .hot-content h3 {
+  font-weight: 700;
+  color: #83f3bb;
+}
+
+section.hot .featured-product {
+  margin-top: 20px;
+}
+
+section.hot .featured-product h3 {
+  font-family: "Lemonada", cursive;
+}
+
+section.hot .featured-product .the-product {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section.hot .featured-product .the-product .product-card {
+  margin-top: 20px;
+}
+
+section.drink {
+  background: #c3f0ca;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+
+section.drink .drink-title h3 {
+  font-family: "Lemonada", cursive;
+}
+
+section.drink .drink-content .the-product {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+section.drink .drink-content .the-product .product-card {
+  margin-top: 20px;
+}
+
+section.why {
+  margin-top: 100px;
+  position: relative;
+  min-height: 120vh;
+}
+
+section.why .bg-right {
+  height: 120vh;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 80, 50, 0)), color-stop(50%, #d4dbe0), color-stop(51%, #d3dee3), to(#d3dee3));
+  background: linear-gradient(to bottom, rgba(248, 80, 50, 0) 0%, #d4dbe0 50%, #d3dee3 51%, #d3dee3 100%);
+  top: 0;
+  right: 0;
+}
+
+section.why img.bg {
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.why .why-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+section.why .why-content .why-title {
+  font-family: "Lemonada", cursive;
+}
+
+section.why .why-content .why-desc {
+  font-size: 14px;
+}
+
+section.why .why-content .card {
+  border-radius: 25px;
+}
+
+section.why .why-content .card .card-header {
+  padding: 5px 10px;
+  background: #393e46;
+  border-radius: 25px;
+  font-family: "Lemonada", cursive;
+}
+
+section.why .why-content .card .card-header button {
+  color: white;
+}
+
+section.why .why-content .card .card-header button:hover {
+  color: #0eff32;
+  text-decoration: none;
+}
+
+section.blog {
+  margin-top: 100px;
+}
+
+section.blog h3 {
+  font-family: "Lemonada", cursive;
+}
+
+section.blog .post {
+  margin-top: 50px;
+}
+
+section.blog .post img {
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  height: auto;
+  width: 100%;
+}
+
+section.blog .post .post-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 1px;
+  min-height: 300px;
+  background: #3ddc90;
+}
+
+footer .list-group .list-group-item {
+  background: none;
+  border: none;
+  font-family: "Lemonada", cursive;
+}
+
+footer .list-group .list-group-item span {
+  font-family: "Noto Sans", sans-serif;
+}
+
+footer .head {
+  font-family: "Lemonada", cursive;
+}
+
+footer .footer-content {
+  margin-top: 50px;
 }
 
 @media (min-width: 576px) {
-  nav {
-    background: none !important;
-    position: relative;
-    z-index: 3;
-  }
-  nav .navbar-nav {
-    width: 800px;
-    text-transform: uppercase;
-  }
-  nav .navbar-nav .active {
-    font-weight: 700;
-  }
   section.jumbo {
     position: relative;
     z-index: 1;
     margin-top: -58px;
     height: 100vh;
-    background: #3DDC90;
+    background: #3ddc90;
     padding-top: 100px;
   }
   section.jumbo .bg {
+    display: block;
     background-size: cover;
     background-position: center center;
     position: absolute;
-    border: 2px solid white;
     top: 0;
     right: 0;
     height: 100vh;
@@ -58,7 +374,7 @@ section.jumbo {
     line-height: 70px;
   }
   section.jumbo .jumbo-desc h1 span {
-    color: #F9F8F4;
+    color: #f9f8f4;
   }
   section.jumbo .jumbo-desc p {
     font-size: 14px;
@@ -68,12 +384,201 @@ section.jumbo {
     font-family: "Lemonada", cursive;
   }
   section.jumbo .similar .similar-product {
-    border: 1px solid red;
     width: 70%;
   }
   section.jumbo .similar .title {
     margin-top: 60px;
     font-family: "Lemonada", cursive;
+  }
+  section.hot {
+    margin-top: 100px;
+  }
+  section.hot .hot-img-container {
+    padding: 0px 0px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  section.hot .hot-img-container .bg {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.33);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  section.hot .hot-img-container img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  section.hot .hot-img-container .hot-content {
+    margin-top: 80px;
+    color: white;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    position: absolute;
+    z-index: 4;
+  }
+  section.hot .hot-img-container .hot-content h3 {
+    font-weight: 700;
+    color: #83f3bb;
+  }
+  section.hot .featured-product {
+    margin-top: 20px;
+  }
+  section.hot .featured-product h3 {
+    font-family: "Lemonada", cursive;
+  }
+  section.hot .featured-product .the-product {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  section.hot .featured-product .the-product .product-card {
+    margin-top: 20px;
+  }
+  section.drink {
+    background: #c3f0ca;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+  }
+  section.drink .drink-title h3 {
+    font-family: "Lemonada", cursive;
+  }
+  section.drink .drink-content .the-product {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  section.drink .drink-content .the-product .product-card {
+    margin-top: 20px;
+  }
+  section.why {
+    margin-top: 100px;
+    position: relative;
+    min-height: 550px;
+  }
+  section.why .bg-right {
+    height: 550px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #d3dee3), to(#d3dee3));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #d3dee3 50%, #d3dee3 100%);
+    top: 0;
+    right: 0;
+  }
+  section.why img.bg {
+    height: 550px;
+    width: auto;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  section.why .why-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.why .why-content .why-title {
+    font-family: "Lemonada", cursive;
+  }
+  section.why .why-content .why-desc {
+    font-size: 14px;
+  }
+  section.why .why-content .card {
+    border-radius: 30px;
+  }
+  section.why .why-content .card .card-header {
+    padding: 5px 10px;
+    background: #393e46;
+    border-radius: 30px;
+    font-family: "Lemonada", cursive;
+  }
+  section.why .why-content .card .card-header button {
+    color: white;
+  }
+  section.why .why-content .card .card-header button:hover {
+    color: #0eff32;
+    text-decoration: none;
+  }
+  section.blog {
+    margin-top: 100px;
+  }
+  section.blog h3 {
+    font-family: "Lemonada", cursive;
+  }
+  section.blog .post {
+    height: 300px !important;
+    margin-top: 50px;
+  }
+  section.blog .post img {
+    margin-top: 0px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    height: 300px !important;
+    width: auto;
+  }
+  section.blog .post .post-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 1px;
+    min-height: 300px;
+    background: #3ddc90;
+  }
+  footer .list-group .list-group-item {
+    background: none;
+    ont-family: "Lemonada", cursive;
+  }
+  footer .list-group .list-group-item span {
+    font-family: "Noto Sans", sans-serif;
+  }
+  footer .head {
+    font-family: "Lemonada", cursive;
+  }
+  footer .footer-content {
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
