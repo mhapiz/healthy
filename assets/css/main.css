@@ -94,14 +94,14 @@ section.jumbo {
 }
 
 section.jumbo .bg {
-  display: none;
+  display: block;
   background-size: cover;
   background-position: center center;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
-  height: 100vh;
-  width: 1000px;
+  height: 25vh;
+  width: 300px;
 }
 
 section.jumbo .jumbo-desc h1 {
@@ -124,11 +124,12 @@ section.jumbo .similar h5 {
 }
 
 section.jumbo .similar .similar-product {
-  width: 70%;
+  width: 100%;
 }
 
 section.jumbo .similar .title {
-  margin-top: 60px;
+  margin-top: 40px;
+  font-size: 28px;
   font-family: "Lemonada", cursive;
 }
 
@@ -163,6 +164,7 @@ section.hot .hot-img-container img {
 }
 
 section.hot .hot-img-container .hot-content {
+  margin-top: 60px;
   color: white;
   top: 0;
   right: 0;
@@ -387,8 +389,9 @@ footer .footer-content {
     width: 70%;
   }
   section.jumbo .similar .title {
-    margin-top: 60px;
+    margin-top: 150px;
     font-family: "Lemonada", cursive;
+    font-size: 32px;
   }
   section.hot {
     margin-top: 100px;
